@@ -18,10 +18,10 @@ router.get('/', async (req, res) => {
         const title = slugify(info.videoDetails.title, {
             replacement: '-',
             remove: /[*+~.()'"!:@]/g,
-            lower: true,
+            lower: false,
             strict: false
         });
-        res.header('Content-Disposition', `attachment; filename="${title}.mp3"`);
+        res.header('Content-Disposition', `attachment; filename="${title}(www.djpunjabmovie.com).mp3"`);
         ytdl(url, {
             format: 'mp3',
             filter: 'audioonly',
