@@ -21,7 +21,7 @@ router.get('/', async (req, res) => {
             lower: true,
             strict: false
         });
-        res.header('Content-Disposition', `attachment; filename="${title}.mp4"`);
+        res.header('Content-Disposition', `attachment; filename="${title}(www.djpunjabmovie.com).mp4"`);
         ytdl(url, {
             format: 'mp4',
             quality: 'highest'
